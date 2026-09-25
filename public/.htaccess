@@ -1,0 +1,37 @@
+# Hostinger Apache / LiteSpeed Configuration for React SPA (JANALA OTT Admin)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Ensure HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Don't rewrite real files or directories
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  
+  # Redirect all other requests to index.html for Client-side React Router
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# MIME types for video streaming & modern web assets
+<IfModule mod_mime.c>
+  AddType application/javascript .js .mjs
+  AddType text/css .css
+  AddType video/mp4 .mp4
+  AddType video/webm .webm
+  AddType application/x-mpegURL .m3u8
+  AddType video/MP2T .ts
+  AddType font/woff2 .woff2
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

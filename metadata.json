@@ -1,0 +1,6 @@
+{
+  "name": "JANALAA (জানালা) OTT Heritage Studio",
+  "description": "Premier Bengali OTT platform and direct Cloudflare R2 video upload administration portal with PostgreSQL metadata tracking. Stories Find a Home Here.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

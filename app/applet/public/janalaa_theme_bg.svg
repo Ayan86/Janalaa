@@ -1,0 +1,451 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Sky & River Golden Hour Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1B120E" />
+      <stop offset="25%" stopColor="#2E1C14" />
+      <stop offset="50%" stopColor="#6E3E1E" />
+      <stop offset="70%" stopColor="#B86C28" />
+      <stop offset="85%" stopColor="#E2A145" />
+      <stop offset="100%" stopColor="#F7CE78" />
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="81%" cy="51%" r="35%">
+      <stop offset="0%" stopColor="#FFF7D6" stopOpacity="1" />
+      <stop offset="15%" stopColor="#FED77B" stopOpacity="0.85" />
+      <stop offset="35%" stopColor="#E49B38" stopOpacity="0.45" />
+      <stop offset="60%" stopColor="#A4551E" stopOpacity="0.15" />
+      <stop offset="100%" stopColor="#3A1D11" stopOpacity="0" />
+    </radialGradient>
+
+    <!-- Hooghly River Water Gradient -->
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#1A110D" />
+      <stop offset="30%" stopColor="#291811" />
+      <stop offset="55%" stopColor="#5A341A" />
+      <stop offset="75%" stopColor="#A86227" />
+      <stop offset="85%" stopColor="#D99742" />
+      <stop offset="100%" stopColor="#6C3919" />
+    </linearGradient>
+
+    <!-- Projector Radiant Light Beam -->
+    <linearGradient id="projectorBeam" x1="0%" y1="40%" x2="100%" y2="60%">
+      <stop offset="0%" stopColor="#FFF9E0" stopOpacity="0.8" />
+      <stop offset="20%" stopColor="#F9E09B" stopOpacity="0.45" />
+      <stop offset="55%" stopColor="#E5B25D" stopOpacity="0.22" />
+      <stop offset="80%" stopColor="#B8762F" stopOpacity="0.08" />
+      <stop offset="100%" stopColor="#5E3014" stopOpacity="0" />
+    </linearGradient>
+
+    <!-- Vintage Film Sepia Filter -->
+    <linearGradient id="filmstripGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#2D1D15" />
+      <stop offset="50%" stopColor="#1C110C" />
+      <stop offset="100%" stopColor="#0E0806" />
+    </linearGradient>
+
+    <!-- Brass / Metallic Projector Gradient -->
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#8C6538" />
+      <stop offset="35%" stopColor="#D4AF37" />
+      <stop offset="65%" stopColor="#9C7235" />
+      <stop offset="100%" stopColor="#523B17" />
+    </linearGradient>
+
+    <!-- Victorian Lamp Light Radial -->
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#FFFCE6" stopOpacity="1" />
+      <stop offset="30%" stopColor="#FAD36E" stopOpacity="0.7" />
+      <stop offset="70%" stopColor="#C97B22" stopOpacity="0.25" />
+      <stop offset="100%" stopColor="#3D1C0F" stopOpacity="0" />
+    </radialGradient>
+
+    <!-- Vintage Vignette & Grain Pattern -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="40%" stopColor="#000000" stopOpacity="0" />
+      <stop offset="80%" stopColor="#140809" stopOpacity="0.55" />
+      <stop offset="100%" stopColor="#080304" stopOpacity="0.88" />
+    </radialGradient>
+  </defs>
+
+  <!-- 1. BASE SKY -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)" />
+  <rect width="1920" height="1080" fill="url(#sunGlow)" />
+
+  <!-- 2. SUN OVER HOOGHLY -->
+  <circle cx="1550" cy="550" r="32" fill="#FFFCE8" />
+  <circle cx="1550" cy="550" r="48" fill="#FCE192" opacity="0.4" />
+  <circle cx="1550" cy="550" r="90" fill="#E8A948" opacity="0.2" />
+
+  <!-- 3. HOOGHLY RIVER WATER -->
+  <path d="M 500 680 Q 900 660 1920 680 L 1920 1080 L 500 1080 Z" fill="url(#waterGrad)" />
+  
+  <!-- Shimmering River Sun Reflection & Waves -->
+  <g opacity="0.55">
+    <ellipse cx="1550" cy="710" rx="90" ry="4" fill="#FFEBB0" />
+    <ellipse cx="1540" cy="725" rx="140" ry="5" fill="#FED880" />
+    <ellipse cx="1530" cy="745" rx="180" ry="6" fill="#F2BF58" />
+    <ellipse cx="1510" cy="770" rx="230" ry="8" fill="#DE9F3B" />
+    <ellipse cx="1490" cy="800" rx="280" ry="9" fill="#C57E24" />
+    <ellipse cx="1460" cy="835" rx="340" ry="11" fill="#B3691B" />
+    <ellipse cx="1420" cy="875" rx="400" ry="13" fill="#964F13" />
+  </g>
+
+  <!-- 4. DISTANT VICTORIA MEMORIAL IN GOLDEN MIST -->
+  <g transform="translate(860, 560)" opacity="0.5" fill="#4A2F1E">
+    <!-- Base podium -->
+    <rect x="0" y="70" width="340" height="12" rx="1" />
+    <!-- Colonnade base -->
+    <rect x="30" y="55" width="280" height="15" />
+    <!-- Left Wing & Corner Cupola -->
+    <rect x="30" y="38" width="50" height="20" />
+    <path d="M 45 38 C 45 28 65 28 65 38 Z" />
+    <line x1="55" y1="28" x2="55" y2="20" stroke="#4A2F1E" stroke-width="2" />
+    <!-- Right Wing & Corner Cupola -->
+    <rect x="260" y="38" width="50" height="20" />
+    <path d="M 275 38 C 275 28 295 28 295 38 Z" />
+    <line x1="285" y1="28" x2="285" y2="20" stroke="#4A2F1E" stroke-width="2" />
+    <!-- Central Grand Dome -->
+    <rect x="120" y="35" width="100" height="22" />
+    <!-- Main Dome curve -->
+    <path d="M 130 35 C 130 5 210 5 210 35 Z" />
+    <!-- Lantern & Angel of Victory on top -->
+    <rect x="162" y="5" width="16" height="8" />
+    <line x1="170" y1="5" x2="170" y2="-6" stroke="#4A2F1E" stroke-width="2" />
+    <circle cx="170" cy="-6" r="3" />
+  </g>
+
+  <!-- 5. ICONIC HOWRAH BRIDGE SILHOUETTE -->
+  <g transform="translate(1220, 530)" fill="#23140D" stroke="#23140D">
+    <!-- Pylons & Main Cantilever Structure -->
+    <!-- Water base piers -->
+    <rect x="80" y="140" width="40" height="30" />
+    <rect x="520" y="140" width="40" height="30" />
+
+    <!-- Main Deck -->
+    <rect x="0" y="132" width="680" height="10" stroke="none" />
+
+    <!-- West Cantilever Tower (Left Tower) -->
+    <line x1="100" y1="140" x2="150" y2="30" stroke-width="6" />
+    <line x1="100" y1="140" x2="70" y2="30" stroke-width="6" />
+    <line x1="70" y1="30" x2="150" y2="30" stroke-width="6" />
+    <!-- Tower lattice trussing -->
+    <line x1="75" y1="65" x2="145" y2="65" stroke-width="3" />
+    <line x1="85" y1="100" x2="135" y2="100" stroke-width="3" />
+    <line x1="70" y1="30" x2="135" y2="100" stroke-width="2" />
+    <line x1="150" y1="30" x2="85" y2="100" stroke-width="2" />
+
+    <!-- East Cantilever Tower (Right Tower) -->
+    <line x1="540" y1="140" x2="590" y2="30" stroke-width="6" />
+    <line x1="540" y1="140" x2="510" y2="30" stroke-width="6" />
+    <line x1="510" y1="30" x2="590" y2="30" stroke-width="6" />
+    <line x1="515" y1="65" x2="585" y2="65" stroke-width="3" />
+    <line x1="525" y1="100" x2="575" y2="100" stroke-width="3" />
+    <line x1="510" y1="30" x2="575" y2="100" stroke-width="2" />
+    <line x1="590" y1="30" x2="525" y2="100" stroke-width="2" />
+
+    <!-- Upper Cantilever Arms & Arching Trusses -->
+    <path d="M 0 132 L 70 30 L 350 78 L 510 30 L 680 132" fill="none" stroke-width="5" />
+    <path d="M 150 30 L 350 78 L 590 30" fill="none" stroke-width="4" />
+
+    <!-- Diagonal Suspension & Strut Lattice Cables -->
+    <line x1="150" y1="30" x2="200" y2="132" stroke-width="2" />
+    <line x1="200" y1="42" x2="250" y2="132" stroke-width="2" />
+    <line x1="250" y1="54" x2="300" y2="132" stroke-width="2" />
+    <line x1="300" y1="66" x2="350" y2="132" stroke-width="2" />
+    <line x1="510" y1="30" x2="460" y2="132" stroke-width="2" />
+    <line x1="460" y1="42" x2="410" y2="132" stroke-width="2" />
+    <line x1="410" y1="54" x2="360" y2="132" stroke-width="2" />
+    <line x1="350" y1="78" x2="350" y2="132" stroke-width="3" />
+  </g>
+
+  <!-- 6. VINTAGE HOOGHLY STEAM FERRY BOAT -->
+  <g transform="translate(1260, 715)" fill="#1A0F0A">
+    <!-- Hull -->
+    <path d="M 0 25 L 14 38 L 130 38 L 145 25 Z" />
+    <!-- Lower Deck Cabin with glowing portholes -->
+    <rect x="25" y="14" width="95" height="12" rx="2" />
+    <!-- Upper Deck Shelter -->
+    <rect x="40" y="4" width="65" height="10" rx="1" />
+    <!-- Smokestack / Chimney -->
+    <rect x="68" y="-6" width="6" height="10" />
+    <!-- Gentle steam puff -->
+    <path d="M 71 -6 Q 65 -15 80 -22 Q 95 -18 88 -8 Z" fill="#FFE5AF" opacity="0.35" />
+    <!-- Tiny Ferry Lights Reflection in water -->
+    <ellipse cx="75" cy="42" rx="35" ry="3" fill="#FFE79A" opacity="0.4" />
+  </g>
+
+  <!-- 7. LEFT SIDE: VINTAGE FILMSTRIPS & BENGALI CINEMA MONTAGE (SATYAJIT RAY) -->
+  <g transform="translate(0, 0)">
+    <!-- Dark vintage wall texture background -->
+    <rect x="0" y="0" width="580" height="880" fill="#140C08" opacity="0.8" />
+
+    <!-- Top Filmstrip 1 (Horizontal Arc Across Top) -->
+    <g transform="translate(420, 15) rotate(4)">
+      <!-- Filmstrip Base -->
+      <rect x="0" y="0" width="620" height="180" rx="4" fill="url(#filmstripGrad)" stroke="#4A3022" stroke-width="3" />
+      <!-- Sprocket Holes Top -->
+      <g fill="#0B0604">
+        <rect x="20" y="8" width="16" height="22" rx="3" />
+        <rect x="60" y="8" width="16" height="22" rx="3" />
+        <rect x="100" y="8" width="16" height="22" rx="3" />
+        <rect x="140" y="8" width="16" height="22" rx="3" />
+        <rect x="180" y="8" width="16" height="22" rx="3" />
+        <rect x="220" y="8" width="16" height="22" rx="3" />
+        <rect x="260" y="8" width="16" height="22" rx="3" />
+        <rect x="300" y="8" width="16" height="22" rx="3" />
+        <rect x="340" y="8" width="16" height="22" rx="3" />
+        <rect x="380" y="8" width="16" height="22" rx="3" />
+        <rect x="420" y="8" width="16" height="22" rx="3" />
+        <rect x="460" y="8" width="16" height="22" rx="3" />
+        <rect x="500" y="8" width="16" height="22" rx="3" />
+        <rect x="540" y="8" width="16" height="22" rx="3" />
+        <rect x="580" y="8" width="16" height="22" rx="3" />
+      </g>
+      <!-- Sprocket Holes Bottom -->
+      <g fill="#0B0604">
+        <rect x="20" y="150" width="16" height="22" rx="3" />
+        <rect x="60" y="150" width="16" height="22" rx="3" />
+        <rect x="100" y="150" width="16" height="22" rx="3" />
+        <rect x="140" y="150" width="16" height="22" rx="3" />
+        <rect x="180" y="150" width="16" height="22" rx="3" />
+        <rect x="220" y="150" width="16" height="22" rx="3" />
+        <rect x="260" y="150" width="16" height="22" rx="3" />
+        <rect x="300" y="150" width="16" height="22" rx="3" />
+        <rect x="340" y="150" width="16" height="22" rx="3" />
+        <rect x="380" y="150" width="16" height="22" rx="3" />
+        <rect x="420" y="150" width="16" height="22" rx="3" />
+        <rect x="460" y="150" width="16" height="22" rx="3" />
+        <rect x="500" y="150" width="16" height="22" rx="3" />
+        <rect x="540" y="150" width="16" height="22" rx="3" />
+        <rect x="580" y="150" width="16" height="22" rx="3" />
+      </g>
+      <!-- Frame 1: Classic Pather Panchali Apu Silhouette -->
+      <rect x="40" y="38" width="160" height="104" fill="#3D291F" rx="2" />
+      <g fill="#1A100B">
+        <!-- Village path & meadow -->
+        <path d="M 40 120 Q 120 100 200 130 L 200 142 L 40 142 Z" />
+        <!-- Apu young silhouette with satchel -->
+        <circle cx="120" cy="80" r="14" />
+        <path d="M 112 94 L 128 94 L 132 125 L 122 125 L 118 108 L 114 125 L 108 125 Z" />
+        <line x1="126" y1="94" x2="136" y2="108" stroke="#1A100B" stroke-width="4" stroke-linecap="round" />
+      </g>
+
+      <!-- Frame 2: Riverbank & Village Temple -->
+      <rect x="220" y="38" width="160" height="104" fill="#442E22" rx="2" />
+      <g fill="#1D120B">
+        <path d="M 220 125 Q 300 110 380 128 L 380 142 L 220 142 Z" />
+        <!-- Temple shikhara / arch dome -->
+        <path d="M 285 125 L 285 90 C 285 75 315 75 315 90 L 315 125 Z" />
+        <!-- Palm tree silhouette -->
+        <line x1="340" y1="125" x2="345" y2="70" stroke="#1D120B" stroke-width="3" />
+        <circle cx="345" cy="70" r="15" fill="#1D120B" />
+      </g>
+
+      <!-- Frame 3: Sarbojaya & Apu (Mother & Child) -->
+      <rect x="400" y="38" width="160" height="104" fill="#3A261C" rx="2" />
+      <g fill="#180F0A">
+        <path d="M 400 128 L 560 128 L 560 142 L 400 142 Z" />
+        <circle cx="460" cy="88" r="11" />
+        <path d="M 454 99 L 466 99 L 470 128 L 450 128 Z" />
+        <circle cx="495" cy="72" r="14" />
+        <path d="M 485 86 L 505 86 L 515 128 L 480 128 Z" />
+      </g>
+    </g>
+
+    <!-- Master Portrait: Satyajit Ray Tribute Poster (Top Left) -->
+    <g transform="translate(30, 0)">
+      <rect x="0" y="0" width="360" height="380" fill="#241812" rx="4" stroke="#482F22" stroke-width="4" />
+      <rect x="12" y="12" width="336" height="356" fill="#4B3224" />
+      
+      <!-- Sepia Artistic Silhouette of Satyajit Ray in Contemplation -->
+      <g fill="#170F0A">
+        <!-- Broad shoulders & tweed jacket -->
+        <path d="M 20 368 L 70 240 L 160 215 L 260 230 L 320 368 Z" />
+        <!-- Neck & strong jawline -->
+        <path d="M 150 220 L 150 160 L 220 160 L 225 220 Z" />
+        <!-- Iconic Head & Profiling -->
+        <path d="M 125 150 C 120 70 210 50 250 80 C 270 100 270 150 240 180 C 210 205 150 195 125 150 Z" />
+        <!-- Characteristic Hand Supporting Chin / Cheek -->
+        <path d="M 155 240 Q 140 185 170 170 Q 185 160 195 180 Q 170 215 175 250 Z" />
+        <!-- Thoughtful brow and classic sideburns -->
+        <path d="M 140 110 C 130 115 130 140 145 150 C 160 160 170 130 150 110 Z" />
+      </g>
+
+      <!-- Vintage Cinema Typography on Poster -->
+      <text x="30" y="55" font-family="serif" font-size="22" font-weight="900" fill="#E5C365" letter-spacing="4" opacity="0.85">JANALAA</text>
+      <text x="30" y="80" font-family="serif" font-size="16" font-weight="bold" fill="#F4E0A5" opacity="0.75">সত্যজিৎ রায় &bull; শতবর্ষ</text>
+    </g>
+  </g>
+
+  <!-- 8. THE CINEMA PROJECTOR (VINTAGE 35mm ON WOODEN ROAD CHEST) -->
+  <g transform="translate(0, 180)">
+    <!-- Luminous Projector Light Beam sweeping across the whole canvas -->
+    <polygon points="540,490 1920,410 1920,890 540,550" fill="url(#projectorBeam)" />
+    <!-- Bright hot core of projection beam -->
+    <polygon points="540,505 1400,480 1400,640 540,535" fill="#FFFCE6" opacity="0.45" />
+
+    <!-- Projector Stand / Wooden Road Case Trunk -->
+    <g transform="translate(0, 640)">
+      <rect x="0" y="0" width="540" height="260" fill="#24150E" stroke="#3D2418" stroke-width="4" />
+      <!-- Wood planks lines -->
+      <line x1="0" y1="65" x2="540" y2="65" stroke="#170D08" stroke-width="3" />
+      <line x1="0" y1="130" x2="540" y2="130" stroke="#170D08" stroke-width="3" />
+      <line x1="0" y1="195" x2="540" y2="195" stroke="#170D08" stroke-width="3" />
+      <!-- Heavy Brass Corner Brackets & Rivets -->
+      <rect x="0" y="0" width="45" height="45" fill="url(#brassGrad)" />
+      <circle cx="20" cy="20" r="4" fill="#29180C" />
+      <rect x="495" y="0" width="45" height="45" fill="url(#brassGrad)" />
+      <circle cx="520" cy="20" r="4" fill="#29180C" />
+      <!-- Central vintage latch -->
+      <rect x="250" y="10" width="40" height="60" rx="3" fill="url(#brassGrad)" />
+      <circle cx="270" cy="40" r="6" fill="#1C1008" />
+    </g>
+
+    <!-- Projector Body & Mechanics -->
+    <g transform="translate(0, 0)">
+      <!-- Main Matte-Black Chassis -->
+      <rect x="180" y="440" width="300" height="210" rx="8" fill="#18110D" stroke="#3A2417" stroke-width="4" />
+      <rect x="210" y="465" width="120" height="150" rx="4" fill="#2B1910" stroke="#482E1E" stroke-width="2" />
+      <!-- Lamp Housing Louver Vents -->
+      <line x1="225" y1="490" x2="315" y2="490" stroke="#0D0704" stroke-width="4" />
+      <line x1="225" y1="515" x2="315" y2="515" stroke="#0D0704" stroke-width="4" />
+      <line x1="225" y1="540" x2="315" y2="540" stroke="#0D0704" stroke-width="4" />
+      <line x1="225" y1="565" x2="315" y2="565" stroke="#0D0704" stroke-width="4" />
+
+      <!-- Optical Lens Barrel Projecting Light -->
+      <rect x="475" y="495" width="65" height="50" rx="3" fill="url(#brassGrad)" stroke="#2D1A0D" stroke-width="2" />
+      <ellipse cx="540" cy="520" rx="8" ry="25" fill="#FFEAA8" stroke="#D4AF37" stroke-width="3" />
+      <circle cx="540" cy="520" r="15" fill="#FFFFFF" />
+
+      <!-- Upper Feed Film Reel (Top Left Spool) -->
+      <g transform="translate(210, 310)">
+        <!-- Reel Spool Hub & Rim -->
+        <circle cx="0" cy="0" r="140" fill="none" stroke="#2B1B13" stroke-width="12" />
+        <circle cx="0" cy="0" r="140" fill="none" stroke="url(#brassGrad)" stroke-width="4" />
+        <!-- Wound 35mm Brown Film Mass -->
+        <circle cx="0" cy="0" r="115" fill="#3D2619" />
+        <circle cx="0" cy="0" r="50" fill="#170F0A" stroke="url(#brassGrad)" stroke-width="4" />
+        <circle cx="0" cy="0" r="18" fill="#D4AF37" />
+        <!-- 5 Circular Cutout Holes in Brass Reel Flange -->
+        <circle cx="0" cy="-75" r="22" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+        <circle cx="71" cy="-23" r="22" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+        <circle cx="44" cy="60" r="22" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+        <circle cx="-44" cy="60" r="22" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+        <circle cx="-71" cy="-23" r="22" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+      </g>
+
+      <!-- Lower Take-up Film Reel (Bottom Left Spool) -->
+      <g transform="translate(70, 560)">
+        <circle cx="0" cy="0" r="150" fill="none" stroke="#241710" stroke-width="14" />
+        <circle cx="0" cy="0" r="150" fill="none" stroke="url(#brassGrad)" stroke-width="4" />
+        <circle cx="0" cy="0" r="120" fill="#382115" />
+        <circle cx="0" cy="0" r="55" fill="#150D08" stroke="url(#brassGrad)" stroke-width="4" />
+        <circle cx="0" cy="0" r="20" fill="#D4AF37" />
+        <!-- Spool Flange Cutout Holes -->
+        <circle cx="0" cy="-80" r="24" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+        <circle cx="76" cy="-25" r="24" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+        <circle cx="47" cy="65" r="24" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+        <circle cx="-47" cy="65" r="24" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+        <circle cx="-76" cy="-25" r="24" fill="#18100C" stroke="#7A5222" stroke-width="2" />
+      </g>
+
+      <!-- Spilling 35mm Filmstrip cascading down the wooden chest -->
+      <path d="M 280 620 C 350 670 420 730 460 810 C 490 870 380 900 320 890" fill="none" stroke="#22130B" stroke-width="42" />
+      <path d="M 280 620 C 350 670 420 730 460 810 C 490 870 380 900 320 890" fill="none" stroke="#4A2E1E" stroke-width="36" />
+    </g>
+  </g>
+
+  <!-- 9. RIGHT FOREGROUND: RIVERSIDE PROMENADE, PARK BENCH & VICTORIAN GAS LAMP -->
+  <g transform="translate(1250, 680)">
+    <!-- Stone Promenade Parapet / Wall -->
+    <rect x="0" y="220" width="670" height="180" fill="#1A110D" stroke="#2D1D16" stroke-width="4" />
+    <!-- Stone masonry copings -->
+    <rect x="-10" y="210" width="690" height="24" rx="2" fill="#2D1F18" />
+
+    <!-- Ornate Wooden Slat Park Bench with Cast Iron Armrests -->
+    <g transform="translate(370, 160)" fill="#20140D">
+      <!-- Backrest Slats -->
+      <rect x="10" y="0" width="220" height="10" rx="2" fill="#523522" stroke="#20140D" stroke-width="2" />
+      <rect x="10" y="14" width="220" height="10" rx="2" fill="#523522" stroke="#20140D" stroke-width="2" />
+      <rect x="10" y="28" width="220" height="10" rx="2" fill="#523522" stroke="#20140D" stroke-width="2" />
+      <rect x="10" y="42" width="220" height="10" rx="2" fill="#523522" stroke="#20140D" stroke-width="2" />
+      <!-- Seat Slats -->
+      <rect x="10" y="60" width="220" height="12" rx="2" fill="#422919" stroke="#170E08" stroke-width="2" />
+      <rect x="10" y="74" width="220" height="12" rx="2" fill="#422919" stroke="#170E08" stroke-width="2" />
+      <!-- Ornate Curved Cast-Iron Legs & Armrest (Left) -->
+      <path d="M 12 0 C -4 30 0 60 10 90 L 5 120 L 25 120 L 30 85 C 40 85 50 80 50 65" fill="none" stroke="#140C07" stroke-width="6" />
+      <!-- Ornate Curved Cast-Iron Legs & Armrest (Right) -->
+      <path d="M 225 0 C 210 30 215 60 225 90 L 220 120 L 240 120 L 245 85 C 255 85 265 80 265 65" fill="none" stroke="#140C07" stroke-width="6" />
+    </g>
+
+    <!-- Ornate Victorian Street Gas Lamp (Kolkata Heritage Streetlamp) -->
+    <g transform="translate(520, -480)">
+      <!-- Giant Warm Amber Glow Halo -->
+      <circle cx="20" cy="180" r="160" fill="url(#lampGlow)" />
+
+      <!-- Cast Iron Fluted Pole & Base -->
+      <rect x="15" y="250" width="10" height="450" fill="#130B07" />
+      <!-- Decorative Collars & Ladder Rest Arms -->
+      <rect x="6" y="248" width="28" height="8" rx="2" fill="#241710" />
+      <line x1="-15" y1="280" x2="55" y2="280" stroke="#130B07" stroke-width="5" stroke-linecap="round" />
+
+      <!-- Ornate Scroll Brackets supporting lantern -->
+      <path d="M 20 250 C 40 230 45 200 35 180 C 15 180 5 210 20 250 Z" fill="#130B07" />
+      <path d="M 20 250 C 0 230 -5 200 5 180 C 25 180 35 210 20 250 Z" fill="#130B07" />
+
+      <!-- Victorian Lantern Glass & Frame -->
+      <!-- Base cup -->
+      <polygon points="10,215 30,215 25,230 15,230" fill="#130B07" />
+      <!-- Glowing Glass Chamber -->
+      <polygon points="5,150 35,150 30,215 10,215" fill="#FFF2B5" stroke="#130B07" stroke-width="4" />
+      <!-- Internal Incandescent Gas Mantle Flame -->
+      <circle cx="20" cy="180" r="12" fill="#FFFFFF" />
+
+      <!-- Lantern Top Roof & Finial Spike -->
+      <polygon points="0,150 40,150 25,125 15,125" fill="#130B07" />
+      <line x1="20" y1="125" x2="20" y2="95" stroke="#130B07" stroke-width="4" stroke-linecap="round" />
+      <circle cx="20" cy="95" r="4" fill="#130B07" />
+    </g>
+  </g>
+
+  <!-- 10. OVERHANGING SILHOUETTED TREE BRANCHES & FLYING EVENING BIRDS -->
+  <g transform="translate(1100, 0)" fill="#150D08">
+    <!-- Main gnarled bough -->
+    <path d="M 820 0 Q 600 60 450 180 Q 380 240 320 270 Q 360 210 460 140 Q 600 50 820 0 Z" />
+    <path d="M 620 50 Q 520 180 430 260 Q 450 210 540 120 Z" />
+
+    <!-- Lush leaf clusters in silhouette -->
+    <!-- Cluster 1 -->
+    <circle cx="340" cy="270" r="30" />
+    <circle cx="370" cy="250" r="35" />
+    <circle cx="390" cy="280" r="28" />
+    <circle cx="330" cy="295" r="22" />
+    <!-- Cluster 2 -->
+    <circle cx="480" cy="180" r="40" />
+    <circle cx="520" cy="160" r="45" />
+    <circle cx="450" cy="200" r="32" />
+    <!-- Cluster 3 -->
+    <circle cx="640" cy="100" r="50" />
+    <circle cx="680" cy="80" r="55" />
+    <circle cx="590" cy="115" r="40" />
+    <!-- Cluster 4 -->
+    <circle cx="780" cy="60" r="60" />
+    <circle cx="830" cy="40" r="65" />
+
+    <!-- Soaring Twilight Birds flying towards the sunset -->
+    <g transform="translate(180, 360)" opacity="0.85">
+      <!-- Bird 1 -->
+      <path d="M 0 0 Q 15 -14 30 -4 Q 45 -14 60 0 Q 42 -4 30 6 Q 18 -4 0 0 Z" />
+      <!-- Bird 2 -->
+      <path d="M 75 18 Q 88 6 100 14 Q 112 6 125 18 Q 110 14 100 22 Q 90 14 75 18 Z" />
+      <!-- Bird 3 -->
+      <path d="M -50 48 Q -40 38 -30 44 Q -20 38 -10 48 Q -22 45 -30 51 Q -38 45 -50 48 Z" />
+      <!-- Distant smaller birds -->
+      <path d="M 160 80 Q 170 72 180 77 Q 190 72 200 80 Q 188 77 180 82 Z" />
+    </g>
+  </g>
+
+  <!-- 11. VINTAGE VIGNETTE, FILM GRAIN & AMBIENT WARMTH OVERLAY -->
+  <rect width="1920" height="1080" fill="url(#vignette)" pointer-events="none" />
+</svg>
